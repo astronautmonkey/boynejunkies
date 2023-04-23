@@ -1,0 +1,39 @@
+<div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-in-sine" data-easing2="ease-out-sine" role="banner" class="navbar w-nav">
+    <div class="nav w-container">
+      <a href="{{ links.2f }}" id="w-node-a20cd87d-50c1-08e4-41ca-bc5fe677c508-e677c506" aria-current="page" class="brand w-nav-brand w--current"><img src="{{ images.-43882078.url }}" loading="lazy" width="75" alt="{{ images.-43882078.alt | trim | escape }}" class="image-5">
+        <div class="logotype">{{ texts.-2d4e4dce }}</div>
+      </a>
+      <nav role="navigation" class="nav-menu-2 w-nav-menu">
+        <div class="dropdowns-wrap">
+          <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="dropdown-wrap">
+                <div class="prospero-link">{{ texts.45cd5992 }}</div><img src="{{ images.381e9250.url }}" alt="{{ images.381e9250.alt | trim | escape }}" class="kit-arrow-dropdown">
+              </div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              {%- assign collection = collections.player-stats | sort: "title" -%}<div class="w-dyn-list">
+                {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
+                  {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+                    <a href="{{ item.url }}" class="dropdown-link w-dropdown-link">{{ item.data.title }}</a>
+                  </div>{%- endfor -%}
+                </div>{%- endunless -%}
+                {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+                  <div>{{ texts.3d503d2b }}</div>
+                </div>{%- endif -%}
+              </div>
+            </nav>
+          </div>
+          <a data-w-id="68f20a9b-203c-8bda-3389-d5a70582700d" href="{{ links.-7fd68af0 }}" class="button-small on-mobile w-inline-block">
+            <div class="button-label">{{ texts.d982a3d }}</div>
+          </a>
+        </div>
+      </nav>
+      <div class="kit-nav-buttons-wrap">
+        <a data-w-id="fde97b5c-717b-9ce1-72d0-a80b597d6718" href="{{ links.-7fd68af0 }}" class="button-small kit-download-menu w-inline-block">
+          <div class="button-label">{{ texts.d982a3d }}</div>
+        </a>
+      </div>
+      <div data-w-id="f197478a-d427-66d7-5926-9b64cfbbff61" class="menu-button-kit menu-button-kit-nav w-nav-button"><img src="{{ images.-70f6df7d.url }}" height="14" width="20" data-sizes="[{&quot;max&quot;:991,&quot;size&quot;:&quot;20px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ images.-70f6df7d.alt | trim | escape }}" class="menu-icon-kit-nav"><img src="{{ images.-70f6df7d.url }}" height="14" width="20" data-sizes="[{&quot;max&quot;:991,&quot;size&quot;:&quot;20px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ images.-70f6df7d.alt | trim | escape }}" class="menu-icon-swipe"></div>
+    </div>
+  </div>
