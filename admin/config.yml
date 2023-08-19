@@ -3,6 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -171,6 +172,7 @@ collections:
         label: Featured on homepage
         widget: boolean
         required: false
+        default: false
       - hint: ''
         name: f_brief-project-description
         label: Brief project description
@@ -592,9 +594,9 @@ collections:
             label: Link
             name: 2f
             widget: string
-          - hint: 'Original link: /scores, key: -7fd68af0'
+          - hint: 'Original link: /scores/, key: -7afad2e1'
             label: Link
-            name: '-7fd68af0'
+            name: '-7afad2e1'
             widget: string
           - hint: 'Original link: https://twitter.com/travisnwhite, key: -60c1a3f0'
             label: Link
